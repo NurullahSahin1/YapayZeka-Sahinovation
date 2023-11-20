@@ -1,0 +1,53 @@
+@import '_colors';
+@import '_mediaqueries';
+@import '_navbar';
+
+.footer-area {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 20px 20px 20px 50px;
+    padding: 40px;
+
+    &-links {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        &-icons {
+            display: flex;
+            justify-content: space-between;
+            max-width: 200px;
+            color: $light;
+            padding-right: 10px;
+
+            i {
+                color: $blue;
+                font-size: 20px;
+            }
+            i:hover{
+                color: $green;
+                transform:scaleX(1.2)
+            }
+        }
+       
+       
+    }
+
+    h4 {
+        font-size: 20px;
+        font-family: 'electrolize', sans-serif;
+        color: $light;
+        text-decoration: underline;
+    }
+
+    a {
+        font-family: 'electrolize', sans-serif;
+        color: $light;
+    }
+
+    @include notepad{
+        grid-template-columns: 1fr 1fr;
+        row-gap: 40px;
+    }
+
+}

@@ -1,0 +1,70 @@
+@import '_colors';
+@import '_mediaqueries';
+@import '_navbar';
+
+.step-sec {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 70px;
+    padding: 0 50px;
+
+    &-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h3 {
+            font-size: 30px;
+            font-family: 'electrolize', sans-serif;
+            color: $light;
+        }
+
+        p {
+            font-size: 20px;
+            color: $light;
+            line-height: 1.6;
+            font-family: 'electrolize', sans-serif;
+            text-align: right;
+            max-width: 400px;
+
+        }
+    }
+
+    &-list {
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+
+            li {
+                display: flex;
+                justify-content: space-between;
+                border-bottom: 1px solid gray;
+                padding-bottom: 40px;
+                margin-top: 40px;
+
+                h4 {
+                    color: $light;
+                    font-size: 15px;
+                    
+                }
+                span{
+                    color: $green;
+                }
+
+                img {
+                    width: 50px;
+                    background: transparent;
+                }
+            }
+
+
+        }
+
+
+
+    }
+}

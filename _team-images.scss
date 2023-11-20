@@ -1,0 +1,38 @@
+@import '_colors';
+@import '_mediaqueries';
+@import '_navbar';
+
+.team-images{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 100px;
+    &-wrapper{
+        position: relative;
+        h1{
+            position: absolute;
+            text-align: center;
+            padding: 20px;
+            border-radius: 15px;
+            background-color: rgba(255,255,255,0.08);
+            backdrop-filter: blur(5px);
+            width: 100%;
+            bottom:0;
+            color: $green;
+            font-size: 30px;
+            font-family: 'electrolize', sans-serif;
+        }
+        img{
+            width: 400px;
+            border-radius: 10px;
+            height: 200px;
+            &:hover{
+                cursor: pointer;
+                opacity: 0.8;
+
+            }
+        }
+    }
+
+}

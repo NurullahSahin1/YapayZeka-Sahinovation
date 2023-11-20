@@ -1,0 +1,108 @@
+@import '_colors';
+@import '_mediaqueries';
+@import '_navbar';
+
+
+
+.card-sec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-info {
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0;
+
+
+        h1 {
+            font-size: 30px;
+            font-family: 'electrolize', sans-serif;
+            color: $light;
+            max-width: 500px;
+            text-align: center;
+        }
+
+        p {
+            font-size: large;
+            color: $light;
+            line-height: 1.7;
+            margin-top: 20px;
+            max-width: 600px;
+
+        }
+
+    }
+
+    &-cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+
+        &-card {
+            border: 1px solid $green;
+            padding: 40px;
+            border-radius: 10px;
+            margin-top: 50px;
+
+
+
+            img {
+                width: 400px;
+                height: 300px;
+                border-radius: 10px;
+                margin-bottom: 20px;
+            }
+
+            h1 {
+                font-size: 25px;
+                font-family: 'electrolize', sans-serif;
+                color: $green;
+
+            }
+
+            p {
+                font-size: 20px;
+                color: $light;
+                line-height: 1.6;
+                margin-top: 20px;
+
+            }
+
+            @include notepad {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                h1 {
+                    font-size: 20px;
+
+                }
+
+                p {
+                    font-size: 16px;
+                    text-align: left;
+                }
+
+            }
+
+        }
+
+        @include notepad {
+            grid-template-columns: repeat(1, 1fr);
+            position: center;
+
+            h1 {
+                font-size: 20px;
+
+            }
+
+            p {
+                font-size: 16px;
+            }
+
+        }
+
+    }
+
+}

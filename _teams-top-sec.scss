@@ -1,0 +1,96 @@
+@import '_colors';
+@import '_mediaqueries';
+@import '_navbar';
+
+
+.top-sec {
+    @extend %align-center;
+    gap: 50px;
+    padding: 0 100px;
+
+    &-left {
+        background-color: blue;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 50px;
+        padding: 20px;
+        border-radius: 10px;
+
+        h1 {
+            font-size: 30px;
+            font-family: 'electrolize', sans-serif;
+            color: $light;
+            text-align: center;
+        }
+
+        &-counter-body {
+            background-color: rgba(0, 0, 0);
+            padding: 20px;
+            border-radius: 15px;
+            border: 1px solid gray;
+            box-shadow: 0px 4px 50px 10px rgba(7, 223, 54, 0.741);
+
+            h3 {
+                font-size: 25px;
+                color: $light;
+                font-family: 'electrolize', sans-serif;
+                text-align: center;
+
+            }
+
+            &-counter {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                column-gap: 20px;
+                padding: 10px;
+
+                &-count {
+                    background-color: #000015;
+                    text-align: center;
+                    border-radius: 10px;
+                    padding: 10px;
+                    font-size: 20px;
+                    font-family: 'electrolize', sans-serif;
+                    color: $light;
+
+
+                    #number {
+                        color: $green;
+                    }
+                }
+            }
+        }
+        &-buttons{
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+        
+        button{
+            background-color: transparent;
+            border: 2px solid #03153e;
+            color: white;
+            transition: all .3s ease;
+            padding: 10px;
+            border-radius: 20px;
+            &:hover{
+                background-color: cadetblue;
+                transform: scale(0.9);
+            }
+        }
+        }
+    }
+    &-right{
+        img{
+        height: 380px;
+        width: 600px;
+        object-fit: cover;
+        border-radius: 15px;
+    }
+    }
+    @include notepad{
+        flex-direction: column;
+        
+    }
+
+}

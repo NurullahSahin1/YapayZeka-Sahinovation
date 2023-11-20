@@ -1,0 +1,72 @@
+@import '_colors';
+@import '_mediaqueries';
+@import '_navbar';
+
+.last-projects {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+    h1 {
+        font-size: 30px;
+        font-family: 'electrolize', sans-serif;
+        color: $light;
+        text-align: left;
+    }
+
+    &-title {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+
+        &-info {
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            max-width: 700px;
+            h3{
+                font-size: 20px;
+                font-family: 'electrolize', sans-serif;
+                color: $light;
+                text-align: left;
+            }
+            p {
+                font-size: 20px;
+                color: $light;
+                line-height: 1.6;
+                font-family: 'electrolize', sans-serif;
+                text-align: left;
+            }
+        }
+
+        &-images {
+            background-color: #323443;
+            display: flex;
+            padding: 40px 60px 0;
+            justify-content: center;
+            cursor: pointer;
+            position: relative;
+
+            &:hover {
+                background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+
+            }
+
+            &-image {
+                width: 700px;
+                height: 300px;
+            }
+
+            &-icon {
+                background-color: #494a57;
+                position: absolute;
+                top: 5px;
+                right: 5px;
+                display: grid;
+                place-items: center;
+                padding: 5px;
+                border-radius: 5px;
+            }
+        }
+    }
+}

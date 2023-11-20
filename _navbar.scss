@@ -1,0 +1,95 @@
+@import '_colors';
+@import '_mediaqueries';
+
+%align-center {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+%hover-items {
+    transform: scaleY(1.2);
+    transition: .3s;
+    cursor: pointer;
+}
+
+.navbar {
+    position: sticky;
+    top:0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $black;
+    padding: 20px;
+    z-index: 100;
+
+    &-logo {
+        font-size: 30px;
+        font-family: 'electrolize', sans-serif;
+        margin-left: 50px;
+        flex-basis: 50%;
+
+        &:hover {
+            @extend %hover-items;
+        }
+
+
+        h1 {
+            color: $green ;
+            letter-spacing: 10px;
+        }
+
+        span {
+            color: $red;
+        }
+
+        @include notepad{
+            flex-basis: 90%;
+        }
+
+    }
+
+    &-right {
+        @extend %align-center;
+        margin-right: 50px;
+        flex-basis: 40%;
+        padding: 20px;
+
+
+        a {
+            font-size: 20px;
+            color: $light;
+
+            &:hover {
+                @extend %hover-items;
+                text-decoration: underline $green;
+
+            }
+            @include notepad{
+                display: none;
+            }
+           
+        }
+        @include notepad{
+            display: none;
+        }
+       
+      
+
+    }
+
+    &-button {
+        display: none;
+        @include notepad{
+            display: block;
+            padding: 5px;
+            font-size: 30px;
+            cursor: pointer;
+            &:hover{
+                background-color: $green;
+                transform: scale(1.1);
+            }
+        }
+    }
+
+}

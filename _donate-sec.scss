@@ -1,0 +1,64 @@
+@import '_colors';
+@import '_mediaqueries';
+@import '_navbar';
+
+.donate-sec{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 20px 80px;
+    margin-top: 50px;
+    &-info{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 50px;
+        h1{
+            font-size: 30px;
+            font-family: 'electrolize', sans-serif;
+            color: $light;
+        }
+        button{
+            background-color: $light;
+            color: $black;
+            padding: 12px;
+            border-radius: 20px;
+            border: 1px solid transparent;
+            font-size: 18px;
+            font-family: 'electrolize', sans-serif;
+
+        }
+    }
+    &-content{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        justify-content: center;
+        gap: 50px;
+        &-people{
+            background-color: lightgreen;
+            color: $light;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 15px;
+            border-radius: 50px;
+            text-wrap: nowrap;
+            min-width: 250px;
+            max-width: fit-content;
+            img{
+                width: 50px;
+                border-radius: 50%;
+            }
+        }
+        @include notepad{
+            grid-template-columns: repeat(3,1fr);
+            place-items: center;
+        }
+
+        @include tablet{
+            grid-template-columns: repeat(2,1fr);
+            place-items: center;
+        }
+    
+    }
+}

@@ -1,0 +1,76 @@
+@import '_colors';
+@import '_mediaqueries';
+@import '_navbar';
+
+.technologies {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 30px;
+    gap: 100px;
+
+
+
+    &-info {
+        max-width: 600px;
+        display: grid;
+        gap: 10px;
+
+        h2 {
+            font-size: 40px;
+            color: $light;
+        }
+
+        p {
+            color: $light;
+            line-height: 1.6;
+        }
+
+        &-btn {
+            background-color: $green;
+            border-radius: 15px;
+            font-size: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 1px solid transparent;
+
+
+        }
+
+        &-btn:hover {
+            border: 1px solid $green;
+            background-color: $green2;
+            color: $light;
+
+        }
+    }
+
+    &-cards {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 50px;
+
+        &-card {
+            color: $light;
+            min-width: 200px;
+            height: 400px;
+            background: url(images/myimages/AIBG2.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            border-radius: 40px 40px 0 0;
+
+            &:nth-child(2) {
+                border-radius: 40px;
+            }
+        }
+
+
+    }
+@include notepad{
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+}
+
+}
