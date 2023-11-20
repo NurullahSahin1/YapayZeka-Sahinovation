@@ -15,9 +15,9 @@ Sass/Scss Integration: The use of Sass and Scss adds a layer of sophistication t
 AI Icons: Throughout this website, you'll find carefully chosen AI-themed icons that enhance visual appeal and provide intuitive navigation.
 Experience My AI World!
 
-Immerse yourself in the world of artificial intelligence with AI Hub. Whether you're a tech enthusiast or a casual visitor, our website invites you to explore the possibilities and advancements in AI technology.
+Immerse yourself in the world of artificial intelligence with this website. Whether you're a tech enthusiast or a casual visitor, our website invites you to explore the possibilities and advancements in AI technology.
 
-Join us on this journey where design meets intelligence. Experience the synergy of creativity and technology at AI Hub!
+Join us on this journey where design meets intelligence. Experience the synergy of creativity and technology at SAHINOVATION.
 
  </p>
 
